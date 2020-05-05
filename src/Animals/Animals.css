@@ -1,0 +1,49 @@
+.Animal-Pictures {
+    background-color: #1d3656;
+    color: #dedede;
+    padding: 16px;
+    max-width: 332px;
+  }
+  
+  .Animal-Pictures label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .Animal-Pictures input,
+  .Animal-Pictures textarea,
+  .Animal-Pictures select {
+    font-size: 14px;
+    padding: 8px;
+    width: 300px;
+  }
+  
+  .Animal-Pictures select {
+    height: 33px;
+  }
+  
+  .Animal-Pictures > .field {
+    margin-bottom: 16px;
+  }
+  .Animal-Pictures > .buttons {
+    margin-top: 26px;
+  }
+  
+  .Animal-Pictures button {
+    background-color: #010d1e;
+    border-radius: 4px;
+    border: 0;
+    color: #cacaca;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .Animal-Pictures button[type="submit"]:hover {
+    background-color: #29862e;
+    color: white;
+  }
+  

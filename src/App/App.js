@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
 import dummyStore from '../dummy-store'
-import config from '../config'
-import { getNamesForAnimal, findName, findAnimal } from '../names-helpers'
+import config from '../../config'
+import { getNamesForAnimal, findName, findAnimal } from '../names-helper'
 import './App.css'
 
 

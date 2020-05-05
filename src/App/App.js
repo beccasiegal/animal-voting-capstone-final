@@ -5,7 +5,7 @@ import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
 import dummyStore from '../dummy-store'
 import config from '../config'
-import names-helper from '../names-helper'
+import { getNamesForAnimal, findName, findAnimal } from '../notes-helpers'
 import './App.css'
 
 

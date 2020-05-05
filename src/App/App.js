@@ -50,7 +50,7 @@ class App extends Component {
   renderNavRoutes() {
     const { animals, names } = this.state
     return (
-      <>
+      <div>
         {['/', '/animals/animalsid'].map(path =>
           <Route
             exact
@@ -87,7 +87,7 @@ class App extends Component {
           path='/add-name'
           component={Names}
         />
-      </>
+      </div>
     )
   }
 

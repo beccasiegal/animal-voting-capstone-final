@@ -8,7 +8,7 @@ import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
 import dummyStore from '../dummy-store'
 import config from '../../config'
-import { getNamesForAnimal, findName, findAnimal } from '../names-helper'
+import { getNamesForAnimal, findName, findAnimal, votesForAnimal, findVote} from '../names-helper'
 import './App.css'
 
 
@@ -73,6 +73,7 @@ class App extends Component {
           render={routeProps => {
             const { animalId } = routeProps.match.params
             const name = findName(name, animalId) || {}
+            const { nameId } = routerProps.match.params
             const animal = findAnimal(animal, animalId)
             return (
               <Animals

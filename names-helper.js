@@ -10,5 +10,8 @@ export const getNamesForAnimal = (names=[], animalId) => (
     : names.filter(name => name.animalId === animalId)
 )
 
-export const countNamesforAnimal = (names=[], animalId) =>
+export const findVote = (votes=[], animalId) => 
+    votes.find(vote => vote.animalId === voteId)
+)
+export const VotesforAnimal = (names=[], animalId) =>
   names.filter(name => name.animalId === animalId).length

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import ApiContext from '../apiContext';
+import ApiContext from '../../apiContext';
 import './AddName.css'
+import Animals from '../Animals/Animals'
 
 export default class AddName extends Component {
   static defaultProps = {

@@ -73,7 +73,7 @@ class App extends Component {
           render={routeProps => {
             const { animalId } = routeProps.match.params
             const name = findName(name, animalId) || {}
-            const { nameId } = routerProps.match.params
+            const { nameId } = routeProps.match.params
             const animal = findAnimal(animal, animalId)
             return (
               <Animals

@@ -5,9 +5,9 @@ import Animals from '../Animals/Animals'
 import Names from '../Names/Names'
 import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
-import dummyStore from '../../dummy-store'
-import config from '../../config'
-import { getNamesForAnimal, findName, findAnimal, votesForAnimal, findVote} from '../../names-helper'
+import dummyStore from '../dummy-store'
+import config from '../config'
+import { getNamesForAnimal, findName, findAnimal} from '../names-helper'
 import './App.css'
 
 
@@ -108,24 +108,13 @@ class App extends Component {
               return (
                 <Names
                   {...routeProps}
-                  votes={votesForAnimal}
+                  votes={votes}
                 />
               )
             }}
           />
         )}
-        <Route
-          path='/names/:nameId'
-          render={routeProps => {
-            const { nameId } = routeProps.match.params
-            const votes = findVote(votes, nameId)
-            return (
-              <Names
-                {...routeProps}
-                votes={votes}
-              />
-            )
-          }}
+        
         />
         <Route
           path='/add-animal'

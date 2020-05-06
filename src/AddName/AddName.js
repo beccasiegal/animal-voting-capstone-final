@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Animals from './Animals/Animals.js'
+import ApiContext from '../apiContext';
 import './AddName.css'
 
 export default class AddName extends Component {

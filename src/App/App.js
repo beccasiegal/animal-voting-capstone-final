@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Animals from '../Animals'
-import Names from '../Names'
-import Votes from '../Votes'
+import Animals from '../Animals/Animals'
+import Names from '../Names/Names'
 import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
-import dummyStore from '../dummy-store'
+import dummyStore from '../../dummy-store'
 import config from '../../config'
-import { getNamesForAnimal, findName, findAnimal, votesForAnimal, findVote} from '../names-helper'
+import { getNamesForAnimal, findName, findAnimal, votesForAnimal, findVote} from '../../names-helper'
 import './App.css'
 
 

@@ -119,12 +119,11 @@ class App extends Component {
           path='/names/:nameId'
           render={routeProps => {
             const { nameId } = routeProps.match.params
-            const  votes = (votes, animalId)
-            const vote = findVote(votes, nameId)
+            const votes = findVote(votes, nameId)
             return (
               <Names
                 {...routeProps}
-                vote={vote}
+                votes={votes}
               />
             )
           }}

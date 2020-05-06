@@ -72,8 +72,7 @@ class App extends Component {
           path='/names/:animalId'
           render={routeProps => {
             const { animalId } = routeProps.match.params
-            const name = findName(name, animalId) || {}
-            const { nameId } = routeProps.match.params
+            const name = findName(name, animalId) || {
             const animal = findAnimal(animal, animalId)
             return (
               <Animals
@@ -106,7 +105,7 @@ class App extends Component {
             path={path}
             render={routeProps => {
               const { animalId } = routeProps.match.params
-              const  votes = (votes, nameId)
+              const  votes = (votes, animalId)
               return (
                 <Names
                   {...routeProps}

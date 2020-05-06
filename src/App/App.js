@@ -95,7 +95,7 @@ class App extends Component {
   }
 
   renderMainRoutes() {
-    const { name, animal } = this.state
+    const { names, animals } = this.state
     return (
       <div>
         {['/', '/animals/:animalId'].map(path =>

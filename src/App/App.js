@@ -90,7 +90,7 @@ class App extends Component {
           />
         )}
         
-        />
+      
         <Route
           path='/add-animal'
           component={AddAnimal}

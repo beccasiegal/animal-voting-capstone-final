@@ -5,7 +5,7 @@ import Animals from '../Animals/Animals'
 import Names from '../Names/Names'
 import AddAnimal from '../AddAnimal/AddAnimal'
 import AddName from '../AddName/AddName'
-import dummyStore from '/src/dummy-store'
+import dummyStore from '../dummy-store'
 import config from '../config'
 import { getNamesForAnimal, findName, findAnimal} from '../names-helper'
 import './App.css'
@@ -19,33 +19,8 @@ class App extends Component {
 
   componentDidMount() {
     // fake date loading from API call
-    fetch(`${config.API_ENDPOINT}/names`)
-      .then(res => {
-        if(!res.ok) {
-          throw new Error('Something went wrong, please try again later');
-        }
-        return res.json();
-      })
-      .then(names => {
-        this.setState({names});
-            })
-            .then (()=> {
-              return (fetch(`${config.API_ENDPOINT}/animals`))
-            })
-            .then(res => {
-              if(!res.ok) {
-                throw new Error('Something went wrong, please try again later');
-              }
-              return res.json();
-            })
-            .then (animals =>{
-              this.setState({animals})
-            })
-      .catch(err => {
-        this.setState({
-          error: err.message
-        });
-      });
+    setTimeout(() => this.setState(dummyStore), 600)
+    
   }
   
 
@@ -145,7 +120,6 @@ class App extends Component {
           <h1>
             <Link to='/'>Animal Naming and Voting</Link>
             {' '}
-            <FontAwesomeIcon icon='check-double' />
           </h1>
         </header>
         <main className='App__main'>

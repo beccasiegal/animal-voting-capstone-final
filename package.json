@@ -26,9 +26,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-   "defaults"
-  ],
+
   "devDependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",

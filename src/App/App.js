@@ -144,11 +144,13 @@ class App extends Component {
          <h1>
            <Link to='/'>Animal Naming and Voting</Link>
            {' '}
-           <FontAwesomeIcon icon='check-double' />
          </h1>
        </header>
        <main className='App__main'>
          {this.renderMainRoutes()}
+         <img src="https://imgur.com/a/FoQS62U" alt="Animal 1"/>
+          <img src="https://imgur.com/a/Lqjz6fv" alt="Animal 2"/>
+          <img src="https://imgur.com/a/DVEwqqG" alt="Animal 3"/>
        </main>
      </div>
    )

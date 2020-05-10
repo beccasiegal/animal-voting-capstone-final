@@ -2,6 +2,10 @@
   text-align: center;
   background-color: lightblue;
 }
+img
+{
+Padding: 10px,10px,10px,10px; //padding positions
+}
 
 .App-logo {
   height: 40vmin;

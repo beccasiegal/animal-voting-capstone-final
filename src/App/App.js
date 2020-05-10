@@ -147,9 +147,9 @@ class App extends Component {
        </header>
        <main className='App__main'>
          {this.renderMainRoutes()}
-         <img src="https://imgur.com/a/FoQS62U" alt="Animal 1" width="400" height="400"/><br></br>
-          <img src="https://imgur.com/a/Lqjz6fv" alt="Animal 2" width="400" height="400"/><br></br>
-          <img src="https://imgur.com/a/DVEwqqG" alt="Animal 3" width="400" height="400"/>
+         <img src="https://imgur.com/a/FoQS62U.png" alt="Animal 1" width="400" height="400"/><br></br>
+          <img src="https://imgur.com/a/Lqjz6fv.png" alt="Animal 2" width="400" height="400"/><br></br>
+          <img src="https://imgur.com/a/DVEwqqG.png" alt="Animal 3" width="400" height="400"/>
        </main>
      </div>
    )

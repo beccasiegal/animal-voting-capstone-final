@@ -143,14 +143,13 @@ class App extends Component {
        <header className='App__header'>
          <h1>
            <Link to='/'>Animal Naming and Voting</Link>
-           {' '}
-         </h1>
+           </h1>
        </header>
        <main className='App__main'>
          {this.renderMainRoutes()}
-         <img src="https://imgur.com/a/FoQS62U" alt="Animal 1"/>
-          <img src="https://imgur.com/a/Lqjz6fv" alt="Animal 2"/>
-          <img src="https://imgur.com/a/DVEwqqG" alt="Animal 3"/>
+         <img src="https://imgur.com/a/FoQS62U" alt="Animal 1" width="400" height="400"/><br></br>
+          <img src="https://imgur.com/a/Lqjz6fv" alt="Animal 2" width="400" height="400"/><br></br>
+          <img src="https://imgur.com/a/DVEwqqG" alt="Animal 3" width="400" height="400"/>
        </main>
      </div>
    )
